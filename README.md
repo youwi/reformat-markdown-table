@@ -19,6 +19,9 @@
 
 用来对 GFM MarkDown 表格源代码进行对齐美化。
 
+| ![](https://segmentfault.com/img/bV5vmK)   | ![](https://segmentfault.com/img/bV5vo1?w=468&h=344)  |
+|--- |---|
+
 例如，GFM MarkDown 表格代码如下：
 
 ```
@@ -26,7 +29,7 @@
 | --- | :---: | ---: |
 | 王顶 | 13582027613 | 408542507@qq.com |
 | 郭玉朝 | 13812347652 | baldy@163.com |
-|  | abc | def'
+|  | abc | def
 ```
 
 通过 reformat-markdown-table-cn 工具的处理之后：
@@ -35,7 +38,7 @@
 | 姓名   |     电话    |             邮箱 |
 |--------|:-----------:|-----------------:|
 | 王顶   | 13582027613 | 408542507@qq.com |
-| 郭玉朝 | 15703277652 |    baldy@163.com |
+| 郭玉朝 | 13812347652 |    baldy@163.com |
 |        |     abc     |              def |
 ```
 
@@ -62,4 +65,6 @@ cat table.md | reformat-markdown-table-cn
 
 cat table.md | reformat-markdown-table-cn > table2.md
 ```
+
+或者直接在 http://reformat.wangding.in 网页上对 MarkDown 表格格式化。
 
